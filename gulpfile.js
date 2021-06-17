@@ -15,7 +15,7 @@ function css() {
         .pipe( gulp.dest('assets/css') );
 }
 
-function watchFiles() {
+async function watchFiles() {
     gulp.watch('assets/css/*.scss', css); 
     gulp.watch('index.html');
 }
