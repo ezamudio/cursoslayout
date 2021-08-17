@@ -4,7 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 
 function css() {
     return gulp
-        .src('assets/css/app.scss')
+        .src('assets/sass/app.scss')
         .pipe(autoprefixer({
             overrideBrowserslist : ['last 2 versions'],
             cascade: false
@@ -16,7 +16,7 @@ function css() {
 }
 
 async function watchFiles() {
-    gulp.watch('assets/css/*.scss', css); 
+    gulp.watch('assets/sass/*.scss', css); 
     gulp.watch('index.html');
 }
 

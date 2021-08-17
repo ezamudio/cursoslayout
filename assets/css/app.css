@@ -1,4 +1,6 @@
-body { -webkit-box-sizing: border-box; box-sizing: border-box; }
+*, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Raleway", sans-serif; }
 
 .contenedor { max-width: 1100px; margin: 0 auto; width: 100%; }
 
@@ -8,4 +10,16 @@ header .carrito-compras { position: relative; }
 
 header .carrito-compras .oculto { display: none; }
 
-header .carrito-compras:hover .contenido { display: block; position: absolute; right: 0; background-color: #f3f3f3; cursor: pointer; }
+header .carrito-compras:hover { cursor: pointer; }
+
+header .carrito-compras:hover .contenido { cursor: default; display: block; position: absolute; right: 0; background-color: #f3f3f3; padding: 1rem; max-width: 400px; }
+
+header .carrito-compras:hover .contenido .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+header .carrito-compras:hover .contenido .row .col { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-flex: 0; -ms-flex: 0 0 33.3%; flex: 0 0 33.3%; text-align: center; }
+
+header .carrito-compras:hover .contenido .row .col img { max-width: 150px; }
+
+header .carrito-compras:hover .contenido .btn { display: block; background-color: #0533A8; color: white; text-align: center; padding: .5rem 1rem; margin-top: .5rem; text-decoration: none; border: none; }
+
+header .carrito-compras:hover .contenido .btn:hover { background-color: #0A215C; }

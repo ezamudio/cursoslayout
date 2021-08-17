@@ -1,0 +1,13 @@
+@mixin buttonStyle($accentColor1, $accentColor2, $textColor) {
+    display: block;
+    background-color: $accentColor1;
+    color: $textColor;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-top: .5rem;
+    text-decoration: none;
+    border: none;
+    &:hover {
+        background-color: $accentColor2;
+    }
+}
